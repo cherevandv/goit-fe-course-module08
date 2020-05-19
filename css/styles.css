@@ -64,10 +64,14 @@ a {
 .banner {
   max-width: 100%;
   height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1a1915;
+  background-size: cover;
   color: var(--color-text-banner);
   text-align: center;
 }
-.header-button {
+.banner .header-button {
   display: flex;
 }
 .button {
@@ -217,8 +221,7 @@ a {
 
 @media (max-width: 767px) {
   .banner {
-    background-color: #1a1915;
-    background: center no-repeat url(../img/mobile.png);
+    background-image: url(../img/mobile.png);
   }
   .header-button {
     justify-content: center;
@@ -246,8 +249,7 @@ a {
 }
 @media (min-width: 768px) {
   .banner {
-    background-color: #1a1915;
-    background: center no-repeat url(../img/tablet.png);
+    background-image: url(../img/tablet.png);
   }
   .container {
     max-width: 660px;
@@ -303,6 +305,9 @@ a {
   }
 }
 @media (min-width: 768px) and (max-width: 959px) {
+  .main-title {
+    width: 80%;
+  }
   .partners {
     padding-bottom: 40px;
   }
@@ -315,14 +320,13 @@ a {
 }
 @media (min-width: 960px) {
   .banner {
-    background: center no-repeat url(../img/desktop.png);
-    background-color: #1a1915;
+    background-image: url(../img/desktop.png);
   }
   .container {
     max-width: 940px;
   }
   .main-title {
-    width: 70%;
+    width: 60%;
   }
   .partners {
     padding-bottom: 70px;
